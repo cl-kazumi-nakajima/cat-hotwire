@@ -16,6 +16,7 @@ module ApplicationHelper
   end
 
   def turbo_stream_flash
+    # #flash を _flash.html.erb のレンダリング結果で update
     turbo_stream.update "flash", partial: "flash"
   end
 end
